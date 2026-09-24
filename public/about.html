@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>О приложении - Часы и часовые пояса</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="/">Главная</a>
+			<a href="/about" class="active">О приложении</a>
+		</nav>
+	</header>
+
+	<main>
+		<section id="about">
+			<h1>О приложении</h1>
+			<p>
+				Лабораторная работа №6 по курсу «Веб-технологии», ТГУ, группа 932402.
+				Вариант 2 - «Часы и часовые пояса».
+			</p>
+			<p>
+				Сервер на Node.js/Express отдаёт текущее время и часовой пояс через
+				<code>GET /api/time</code>: часовой пояс определяется на сервере через
+				<code>Intl.DateTimeFormat().resolvedOptions().timeZone</code>, формат
+				(12/24 часа) переключается параметром <code>?format=12</code>.
+			</p>
+			<p>
+				Автор: Брейденбах Эрик · <a href="https://github.com/ReGo2552" target="_blank"
+					rel="noopener">github.com/ReGo2552</a>
+			</p>
+		</section>
+	</main>
+
+	<footer>
+		<p>Лабораторная работа №6 · Веб-технологии · ТГУ</p>
+	</footer>
+
+	<script src="/script.js"></script>
+</body>
+
+</html>

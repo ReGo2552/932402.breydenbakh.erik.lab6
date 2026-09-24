@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Часы и часовые пояса</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="/" class="active">Главная</a>
+			<a href="/about">О приложении</a>
+		</nav>
+	</header>
+
+	<main>
+		<section id="clock">
+			<h1>Текущее время</h1>
+			<p id="time-display" class="time">--:--:--</p>
+			<p id="timezone-display" class="timezone">-</p>
+
+			<label class="format-toggle">
+				<input type="checkbox" id="format-toggle">
+				12-часовой формат
+			</label>
+
+			<p id="offline-notice" class="offline-notice" hidden>
+				Нет соединения с сервером - показано последнее известное время.
+			</p>
+		</section>
+	</main>
+
+	<footer>
+		<p>Лабораторная работа №6 · Веб-технологии · ТГУ</p>
+	</footer>
+
+	<script src="/script.js"></script>
+</body>
+
+</html>
