@@ -24,3 +24,9 @@ if (timeDisplay && formatToggle) {
 	setInterval(updateTime, 1000);
 	formatToggle.addEventListener("change", updateTime);
 }
+
+if ("serviceWorker" in navigator) {
+	window.addEventListener("load", () => {
+		navigator.serviceWorker.register("/sw.js");
+	});
+}
